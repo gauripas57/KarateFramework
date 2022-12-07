@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/tests\/Post[1:9]","start":1665615895392,"end":1665615896687,"title":"src\/test\/java\/tests\/Post[1:9] 19:04:55.392-19:04:56.687 POST Demo 1"},{"id":2,"group":1,"content":"src\/test\/java\/tests\/Post[2:17]","start":1665615896711,"end":1665615897078,"title":"src\/test\/java\/tests\/Post[2:17] 19:04:56.711-19:04:57.078 POST Demo 2"},{"id":3,"group":1,"content":"src\/test\/java\/tests\/Post[3:25]","start":1665615897090,"end":1665615897505,"title":"src\/test\/java\/tests\/Post[3:25] 19:04:57.090-19:04:57.505 POST Demo 3"},{"id":4,"group":1,"content":"src\/test\/java\/tests\/Post[4:33]","start":1665615897515,"end":1665615897892,"title":"src\/test\/java\/tests\/Post[4:33] 19:04:57.515-19:04:57.892 POST Demo 4"},{"id":5,"group":1,"content":"src\/test\/java\/tests\/Post[5:42]","start":1665615897902,"end":1665615897944,"title":"src\/test\/java\/tests\/Post[5:42] 19:04:57.902-19:04:57.944 POST Demo 5","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
