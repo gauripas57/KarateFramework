@@ -1,0 +1,28 @@
+<testsuite failures="0" name="src/test/java/features/getandupdate.feature" skipped="0" tests="1" time="3.054875">
+  <testcase classname="src.test.java.features.getandupdate" name="Create a user with given data &amp; update its details" time="3.054875">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def random_string = ..................................................... passed
+* def randomString = random_string(5) ..................................... passed
+* def reqPayload = ........................................................ passed
+* set reqPayload.email = randomString + "@gmail.com" ...................... passed
+* print reqPayload ........................................................ passed
+Given path '/public/v2/users' ............................................. passed
+And request reqPayload .................................................... passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match $.id == '#present' .............................................. passed
+* def userId = $.id ....................................................... passed
+* print userId ............................................................ passed
+* def reqPutPayload = ..................................................... passed
+Given path '/public/v2/users/'+ userId .................................... passed
+And request reqPutPayload ................................................. passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.id == '#present' .............................................. passed
+And match $.id == userId .................................................. passed
+And match $.name == 'Tommy' ............................................... passed
+And match $.email == reqPayload.email ..................................... passed</system-out>
+  </testcase>
+</testsuite>

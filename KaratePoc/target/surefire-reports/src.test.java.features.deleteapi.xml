@@ -1,0 +1,26 @@
+<testsuite failures="0" name="src/test/java/features/deleteapi.feature" skipped="0" tests="1" time="4.285886">
+  <testcase classname="src.test.java.features.deleteapi" name="Create,Delete &amp; verify a user with given data" time="4.285886">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def random_string = ..................................................... passed
+* def randomString = random_string(5) ..................................... passed
+* def reqPayload = ........................................................ passed
+* reqPayload.email = randomString + "@gmail.com" .......................... passed
+* print reqPayload ........................................................ passed
+Given path '/public/v2/users' ............................................. passed
+And request reqPayload .................................................... passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And match $.id == '#present' .............................................. passed
+* def userId = $.id ....................................................... passed
+* print userId ............................................................ passed
+Given path '/public/v2/users/' + userId ................................... passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method DELETE ........................................................ passed
+Then status 204 ........................................................... passed
+Given path '/public/v2/users/' + userId ................................... passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed
+And match $.message == 'Resource not found' ............................... passed</system-out>
+  </testcase>
+</testsuite>

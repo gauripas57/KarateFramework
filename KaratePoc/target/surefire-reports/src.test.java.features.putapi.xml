@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/java/features/putapi.feature" skipped="0" tests="1" time="1.941726">
+  <testcase classname="src.test.java.features.putapi" name="Create a user with given data" time="1.941726">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def reqPayload = ........................................................ passed
+Given path '/public/v2/users/467921' ...................................... passed
+And request reqPayload .................................................... passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.id == '#present' .............................................. passed
+And match $.name == 'Danu' ................................................ passed
+And match $.email == 'wEznu@gmail.com' .................................... passed</system-out>
+  </testcase>
+</testsuite>

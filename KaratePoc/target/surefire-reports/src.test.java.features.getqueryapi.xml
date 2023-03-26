@@ -1,0 +1,34 @@
+<testsuite failures="0" name="src/test/java/features/getqueryapi.feature" skipped="0" tests="2" time="2.883819">
+  <testcase classname="src.test.java.features.getqueryapi" name="Get all active users" time="1.776418">
+    <system-out>* def query = {status:'active',gender:'male'} ............................. passed
+* print tokenID ........................................................... passed
+Given header Authorization = 'Bearer' + tokenID ........................... passed
+Given url baseUrl+'/public/v2/users' ...................................... passed
+And params query .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.getqueryapi" name="Get count of active users" time="1.107401">
+    <system-out>* def query = {status:'active',gender:'male'} ............................. passed
+* print tokenID ........................................................... passed
+Given header Authorization = 'Bearer' + tokenID ........................... passed
+Given url baseUrl+'/public/v2/users' ...................................... passed
+And params query .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def query = {status:'active'} ........................................... passed
+* print tokenID ........................................................... passed
+Given header Authorization = 'Bearer' + tokenID ........................... passed
+Given url baseUrl+'/public/v2/users' ...................................... passed
+And params query .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def jsonRes = response .................................................. passed
+* print jsonRes ........................................................... passed
+* def userCount = jsonRes.length .......................................... passed
+* print userCount ......................................................... passed
+* match userCount == 10 ................................................... passed</system-out>
+  </testcase>
+</testsuite>

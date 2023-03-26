@@ -1,0 +1,231 @@
+21:51:05.340 [print] {
+  "name": "Parveen",
+  "gender": "female",
+  "status": "active",
+  "email": "rjOiD@gmail.com"
+}
+
+21:51:05.918 request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 019564ca8918c77c72a86a0c2c656b9de17d6193ad5ee861029e63b8f707896e
+1 > Connection: Keep-Alive
+1 > Content-Length: 80
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+{"name":"Parveen","gender":"female","status":"active","email":"rjOiD@gmail.com"}
+
+21:51:07.365 response time in milliseconds: 1438.37
+1 < 201
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7adbbf215d3c437f-EWR
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 01:51:07 GMT
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=H014%2FVMnzIutXdTVDAK2eejslt6CLBN2b7YoBtCK3E23CRv89zLGk35bVvXSBAThguSWvkYlsg0LWvjVj%2FA1aMj6t%2FJ8Gfy8TEdDfIcEPtDCC8KcXhXaxuBiS1Xc91A%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < etag: W/"cccb92b75c7340a87258462f2a6eb59f"
+1 < location: https://gorest.co.in/public/v2/users/472569
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 89
+1 < x-ratelimit-reset: 1
+1 < x-request-id: 039b2e6d-ccbe-43a2-b009-da34130d7691
+1 < x-runtime: 0.095611
+1 < x-xss-protection: 0
+{"id":472569,"name":"Parveen","email":"rjOiD@gmail.com","gender":"female","status":"active"}
+
+21:51:07.397 [print] 472569
+21:51:07.409 request:
+2 > DELETE https://gorest.co.in/public/v2/users/472569
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 019564ca8918c77c72a86a0c2c656b9de17d6193ad5ee861029e63b8f707896e
+2 > Connection: Keep-Alive
+2 > Host: gorest.co.in
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+
+21:51:08.479 response time in milliseconds: 1065.37
+2 < 204
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 7adbbf290c6e236c-EWR
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Date: Sun, 26 Mar 2023 01:51:08 GMT
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2kknRzK4FXd05l5Z6%2F%2Bu1QNCrqb2dI95%2BOVc2KbogR7jHPputyho28lHzAOWoxlTkFOTjpUxDWS5HaspbyaTl4z00rsKs7S%2Fd5lDnS8ql%2BjcGbEAywtxeU3si02XmDc%3D"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-download-options: noopen
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 90
+2 < x-ratelimit-remaining: 89
+2 < x-ratelimit-reset: 1
+2 < x-request-id: ebd81db6-d3af-4584-a329-d3f8ae5e03e3
+2 < x-runtime: 0.102527
+2 < x-xss-protection: 0
+
+21:51:08.491 request:
+3 > GET https://gorest.co.in/public/v2/users/472569
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: gorest.co.in
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_301)
+
+21:51:09.526 response time in milliseconds: 1026.83
+3 < 404
+3 < CF-Cache-Status: DYNAMIC
+3 < CF-RAY: 7adbbf2ffff18cca-EWR
+3 < Cache-Control: no-cache
+3 < Connection: keep-alive
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Sun, 26 Mar 2023 01:51:09 GMT
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8TU8ZyeKoIefOfxLcTQskT6l6SPCz8RBKCsts1C0IdszEBroId%2F%2FF95zMZnunyLZIknV1XfdgIwk5QNZjZ%2Fwg6AMsS0qplgEyQxGd%2FMnJ39KnG0Vvj6XAfMoH%2FxdXPo%3D"}],"group":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < Transfer-Encoding: chunked
+3 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+3 < referrer-policy: strict-origin-when-cross-origin
+3 < vary: Origin
+3 < x-content-type-options: nosniff
+3 < x-download-options: noopen
+3 < x-frame-options: SAMEORIGIN
+3 < x-permitted-cross-domain-policies: none
+3 < x-request-id: f9c71d4b-9144-4c56-9dfe-0452a4ad5073
+3 < x-runtime: 0.022274
+3 < x-xss-protection: 0
+{"message":"Resource not found"}
+
+:42.770 assertion failed: path: $.message, actual: 'Resource not found', expected: 'Resouce not found', reason: not equal
+rigin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: b2db5135-6883-46b6-b8d5-d2b753221a94
+1 < x-runtime: 0.019593
+1 < x-xss-protection: 0
+{"id":458212,"name":"Gov. Hiranmay Adiga","email":"hiranmay_gov_adiga@sauer.net","gender":"female","status":"inactive"}
+
+16:23:05.116 [print] {
+  "gender": "female",
+  "name": "Gov. Hiranmay Adiga",
+  "id": 458212,
+  "email": "hiranmay_gov_adiga@sauer.net",
+  "status": "inactive"
+}
+
+Vn2dmk%2FTpQGRzs0loAqEANzdwWBo6yeUqSdwW4QBfbyTsevj5kuSnMnhZsTOytumTvBROHaM2e3nRmwJzrq78N0BvUpu4PxSBpy5HmaBo%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < etag: W/"f033dd3650de980bed97edc6bed00dd5"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 123
+1 < x-pagination-total: 1228
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 4fd0aaec-0cf6-4021-b915-ab10d2674be0
+1 < x-runtime: 0.045456
+1 < x-xss-protection: 0
+[{"id":459051,"name":"Maheswar Guneta","email":"maheswar_guneta@weber.org","gender":"male","status":"active"},{"id":459050,"name":"Chandraketu Sethi","email":"chandraketu_sethi@carter.name","gender":"female","status":"active"},{"id":458216,"name":"Nalini Menon PhD","email":"nalini_phd_menon@bailey-tremblay.info","gender":"female","status":"active"},{"id":458213,"name":"Bheeshma Bhat","email":"bheeshma_bhat@schaefer.com","gender":"male","status":"active"},{"id":458209,"name":"Dhaanyalakshmi Tagore","email":"tagore_dhaanyalakshmi@berge.info","gender":"female","status":"active"},{"id":456434,"name":"Bala Kaur I","email":"bala_kaur_i@hane.info","gender":"female","status":"active"},{"id":456432,"name":"Harit Khan","email":"harit_khan@mayert.net","gender":"male","status":"active"},{"id":456431,"name":"Ankal Chattopadhyay","email":"chattopadhyay_ankal@schuppe-lynch.name","gender":"male","status":"active"},{"id":456430,"name":"Amb. Abhisyanta Iyengar","email":"iyengar_abhisyanta_amb@klocko.org","gender":"female","status":"active"},{"id":452485,"name":"Vaishno Arora","email":"vaishno_arora@wiegand.org","gender":"female","status":"active"}]
+
+16:06:50.982 [print] [
+  {
+    "gender": "male",
+    "name": "Maheswar Guneta",
+    "id": 459051,
+    "email": "maheswar_guneta@weber.org",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Chandraketu Sethi",
+    "id": 459050,
+    "email": "chandraketu_sethi@carter.name",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Nalini Menon PhD",
+    "id": 458216,
+    "email": "nalini_phd_menon@bailey-tremblay.info",
+    "status": "active"
+  },
+  {
+    "gender": "male",
+    "name": "Bheeshma Bhat",
+    "id": 458213,
+    "email": "bheeshma_bhat@schaefer.com",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Dhaanyalakshmi Tagore",
+    "id": 458209,
+    "email": "tagore_dhaanyalakshmi@berge.info",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Bala Kaur I",
+    "id": 456434,
+    "email": "bala_kaur_i@hane.info",
+    "status": "active"
+  },
+  {
+    "gender": "male",
+    "name": "Harit Khan",
+    "id": 456432,
+    "email": "harit_khan@mayert.net",
+    "status": "active"
+  },
+  {
+    "gender": "male",
+    "name": "Ankal Chattopadhyay",
+    "id": 456431,
+    "email": "chattopadhyay_ankal@schuppe-lynch.name",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Amb. Abhisyanta Iyengar",
+    "id": 456430,
+    "email": "iyengar_abhisyanta_amb@klocko.org",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Vaishno Arora",
+    "id": 452485,
+    "email": "vaishno_arora@wiegand.org",
+    "status": "active"
+  }
+]
+
+16:06:51.019 [print] 10
+/gtag/js?id=G-7KR6VNWHWS"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-7KR6VNWHWS');</script></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go REST</a><button aria-controls="AppNavBar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#AppNavBar" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="AppNavBar"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="/chandamama-stories"><i class="fas fa-cloud-moon"></i> Chandamama Stories</a></li><li class="nav-item"><a class="nav-link" href="/qa"><i class="fas fa-life-ring"></i> Help</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="ToolsDropDown" role="button"><i class="fas fa-tools"></i> Tools</a><ul aria-labelledby="ToolsDropDown" class="dropdown-menu"><li class=""><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a></li><li class=""><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a></li><li class=""><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></li></ul></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></nav><div class="container pt-3"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="card text-white border-secondary bg-dark"><div class="card-header"><h1 class="card-title text-warning"><i class="fas fa-ghost text-white slide-right"></i> HTTP: Not Found </h1></div><div class="card-body"><h3 class="leaad code-text"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>print</em> <i>"We're really sorry about that."</i><br /></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page</em></code></p></div></div></div><hr class="mt-5" /><div class="container"><div class="footer"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2023</li><li class="list-inline-item float-lg-end"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-end me-3"><a href="/contact-us">Contact Us</a></li></ul></div></div></body></html>
+m float-lg-end me-3"><a href="/contact-us">Contact Us</a></li></ul></div></div></body></html>
+ne-item">&copy; Go Rest 2023</li><li class="list-inline-item float-lg-end"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-end me-3"><a href="/contact-us">Contact Us</a></li></ul></div></div></body></html>
